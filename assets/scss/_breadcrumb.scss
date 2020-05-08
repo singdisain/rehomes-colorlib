@@ -1,0 +1,127 @@
+/* :: 19.0 Breadcrumb Area CSS */
+
+.breadcrumb-area {
+    position: relative;
+    z-index: 1;
+    height: 190px;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb {
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: 10px;
+
+        .breadcrumb-item {
+            color: $white;
+
+            a {
+                color: $white;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                }
+            }
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: '\f105';
+            font-family: "FontAwesome";
+            color: $white;
+        }
+    }
+
+    .page-title {
+        color: $white;
+        font-size: 36px;
+        margin-bottom: 0;
+
+        @media #{$breakpoint-md} {
+            font-size: 30px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.breadcrumb-content-two {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb {
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: 10px;
+
+        .breadcrumb-item {
+            color: $heading;
+
+            a {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                }
+            }
+
+            &.active {
+                color: $secondary;
+            }
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: '\f105';
+            font-family: "FontAwesome";
+            color: $secondary;
+        }
+    }
+
+    .page-title {
+        color: $heading;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+}
+
+.breadcrumb-area-third {
+    height: 420px;
+    width: 100%;
+
+    .post-meta {
+        margin-bottom: 10px;
+
+        a {
+            color: $white;
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+            margin-right: 20px;
+            @include transition-duration(500ms);
+
+            &:hover,
+            &:focus {
+                color: $hover;
+            }
+
+            &::after {
+                content: '|';
+                position: absolute;
+                top: -2px;
+                right: -12px;
+                z-index: 2;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+}

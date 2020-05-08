@@ -1,0 +1,43 @@
+/* :: 22.0 Pagination Area CSS */
+
+.rehomes-pagination {
+    .pagination {
+        .page-item {
+            .page-link {
+                color: $text;
+                background-color: $bg-gray2;
+                border: none;
+                border-radius: 2px;
+                padding: 10px 12px;
+                margin-right: 5px;
+
+                &.active {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.page-counter {
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+
+.rehomes-pagination-counter {
+    position: relative;
+    z-index: 1;
+
+    .page-counter {
+        @media #{$breakpoint-xs} {
+            margin-top: 30px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            margin-top: 0;
+        }
+    }
+}

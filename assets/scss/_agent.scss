@@ -1,0 +1,125 @@
+/* :: 25.0 Agent Area CSS */
+
+.rehomes-agent-list-area {
+    position: relative;
+    z-index: 1;
+
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .col-12 {
+            padding-right: 20px;
+            padding-left: 20px;
+
+            @media #{$breakpoint-xs} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.single-agent-area {
+    position: relative;
+    z-index: 1;
+    @include box-shadow(0px 5px 10px 0px rgba(0, 0, 0, 0.1));
+    margin-bottom: 40px;
+
+    .single-agent-thumb {
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+
+        img {
+            border-radius: 5px 5px 0 0;
+            @include transition-duration(1500ms);
+            width: 100%;
+        }
+    }
+
+    .agent-info {
+        padding: 30px;
+
+        a {
+            color: $text-2;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: inline-block;
+            @include transition-duration(500ms);
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: $text;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .agent-social-info {
+        position: relative;
+        z-index: 1;
+
+        a {
+            background-color: $dark;
+            @include flex(0 0 20%);
+            max-width: 20%;
+            width: 20%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: $secondary;
+            font-size: 16px;
+            border-right: 1px solid $border-3;
+            @include transition-duration(500ms);
+
+            &:first-child {
+                border-radius: 0 0 0 5px;
+            }
+
+            &:last-child {
+                border-right: none;
+                border-radius: 0 0 5px 0;
+            }
+
+            &:hover,
+            &:focus {
+                color: $white;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .single-agent-thumb {
+            img {
+                @include transform(scale(1.2));
+            }
+        }
+    }
+}
+
+.agent-information-area {
+    h4 {
+        font-size: 30px;
+    }
+}

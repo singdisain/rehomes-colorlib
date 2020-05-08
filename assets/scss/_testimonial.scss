@@ -1,0 +1,124 @@
+/* :: 16.0 Testimonial Area CSS */
+
+.rehomes-testimonial-area {
+    position: relative;
+    z-index: 1;
+
+    .single-testimonial-content {
+        .testimonial-icon {
+            i {
+                font-size: 60px;
+                color: $primary;
+            }
+        }
+
+        h5 {
+            font-size: 30px;
+            color: $white;
+            margin-bottom: 20px;
+            margin-top: 25px;
+
+            @media #{$breakpoint-md} {
+                font-size: 22px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 16px;
+            }
+        }
+
+        .testimonial-icon {
+            width: 30px;
+            height: 30px;
+            margin: auto;
+        }
+
+        .testimonial-meta {
+            h5 {
+                font-size: 18px;
+                color: $white;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        @include transition-duration(500ms);
+        width: 50px;
+        height: 50px;
+        background-color: $text-2;
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        margin-top: -25px;
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        color: $white;
+        font-size: 18px;
+
+        @media #{$breakpoint-md} {
+            left: -50px;
+        }
+
+        @media #{$breakpoint-xs} {
+            left: -30px;
+            width: 30px;
+            height: 30px;
+            font-size: 10px;
+            line-height: 30px;
+            margin-top: -15px;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $primary;
+        }
+    }
+
+    .owl-next {
+        left: auto;
+        right: -150px;
+
+        @media #{$breakpoint-md} {
+            right: -50px;
+        }
+
+        @media #{$breakpoint-xs} {
+            right: -30px;
+        }
+    }
+
+    .owl-dots {
+        @include display-flex(flex);
+        @include align-items-center;
+        @include justify-content-center;
+        margin-top: 40px;
+
+        .owl-dot {
+            @include flex(0 0 11px);
+            max-width: 11px;
+            width: 11px;
+            height: 11px;
+            border: 2px solid $white;
+            border-radius: 50%;
+            margin: 0 5px;
+
+            &.active {
+                @include flex(0 0 11px);
+                max-width: 11px;
+                width: 11px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+        }
+    }
+}

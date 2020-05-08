@@ -1,0 +1,90 @@
+/* :: 24.0 Support Area CSS */
+
+.rehomes-support-and-contact-area {
+    .support-title {
+        h2 {
+            font-size: 48px;
+            margin-bottom: 40px;
+
+            @media #{$breakpoint-md} {
+                font-size: 36px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .support-area-content {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .support-perosn-thumb {
+            @include flex(0 0 30%);
+            max-width: 30%;
+            width: 30%
+        }
+
+        .supprto-meta {
+            @include flex(0 0 70%);
+            max-width: 70%;
+            width: 70%;
+            margin-left: 30px;
+
+            @media #{$breakpoint-xs} {
+                margin-left: 15px;
+            }
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 15px;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                margin-bottom: 5px;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 13px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.rehomes-contact-form {
+    .support-form {
+        .form-control {
+            border-color: $border-2;
+            border-radius: 2px;
+            height: 48px;
+            width: 100%;
+            color: $secondary;
+            font-size: 16px;
+            padding: 15px;
+
+            &:focus,
+            &:active {
+                box-shadow: none;
+                border-color: $primary;
+            }
+        }
+
+        textarea {
+            &.form-control {
+                height: 135px;
+            }
+        }
+    }
+}

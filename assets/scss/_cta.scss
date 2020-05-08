@@ -1,0 +1,51 @@
+/* :: 15.0 CTA Area CSS */
+
+.call-to-action-content {
+    h2 {
+        font-size: 48px;
+        color: $white;
+        margin-bottom: 12px;
+
+        @media #{$breakpoint-lg} {
+            font-size: 42px;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 36px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 24px;
+        color: $white;
+        margin-bottom: 0;
+        margin-bottom: 45px;
+
+        @media #{$breakpoint-lg} {
+            font-size: 18px;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 18px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 16px;
+        }
+    }
+
+    .download-btn {
+        a {
+            display: inline-block;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+}

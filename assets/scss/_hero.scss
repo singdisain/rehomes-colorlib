@@ -1,0 +1,30 @@
+/* :: 08.0 Hero Area CSS */
+
+.welcome-area {
+    position: relative;
+    z-index: 1;
+    height: 740px;
+
+    @media #{$breakpoint-lg} {
+        height: 600px;
+    }
+
+    @media #{$breakpoint-md} {
+        height: 450px;
+    }
+
+    @media #{$breakpoint-xs} {
+        height: 380px;
+    }
+
+    .google-maps {
+        width: 100%;
+        height: 100%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}

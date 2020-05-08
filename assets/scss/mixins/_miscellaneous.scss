@@ -1,0 +1,35 @@
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    animation: $value;
+}
+
+@mixin transition-duration($time) {
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin box-shadow($content) {
+    -webkit-box-shadow: $content;
+    box-shadow: $content;
+}
+
+@mixin bg-gradient-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), color-stop(90%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+}

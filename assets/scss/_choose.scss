@@ -1,0 +1,90 @@
+/* :: 13.0 Choose Area CSS */
+
+.rehomes-choose-us-area {
+    position: relative;
+    z-index: 1;
+    background-color: $bg-gray2;
+
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .col-12 {
+            padding-left: 20px;
+            padding-left: 20px;
+
+            @media #{$breakpoint-xs} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.single-choose-us-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background-color: $white;
+    margin-bottom: 40px;
+    @include transition-duration(500ms);
+    border-radius: 5px;
+
+    .choose-us-icon {
+        i {
+            font-size: 48px;
+            color: $primary;
+            @include transition-duration(500ms);
+        }
+    }
+
+    h5 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        @include transition-duration(500ms);
+    }
+
+    p {
+        @include transition-duration(500ms);
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        @include box-shadow(0 0 20px rgba(115, 105, 215, 0.15));
+
+        .choose-us-icon i,
+        h5,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.rehomes-choose-us-area {
+    &.about {
+        background-color: $white;
+
+        .single-choose-us-content {
+            background-color: $bg-gray2;
+
+            &:hover,
+            &:focus {
+                background-color: $primary;
+                @include box-shadow(0 0 20px rgba(115, 105, 215, 0.15));
+
+                .choose-us-icon i,
+                h5,
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

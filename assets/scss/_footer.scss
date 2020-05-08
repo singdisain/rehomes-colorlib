@@ -1,0 +1,274 @@
+/* :: 10.0 Footer Area CSS */
+
+.footer-area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+
+    .widget-title {
+        font-size: 22px;
+        color: $white;
+        margin-bottom: 25px;
+        display: block;
+        text-transform: capitalize;
+    }
+
+    p {
+        color: $secondary;
+        margin-bottom: 25px;
+    }
+
+    .social-info {
+        a {
+            height: 40px;
+            width: 40px;
+            border: 1px solid $white;
+            display: inline-block;
+            border-radius: 50%;
+            color: $white;
+            text-align: center;
+            line-height: 38px;
+            font-size: 18px;
+            margin-right: 10px;
+            @include transition-duration(500ms);
+
+            &:hover {
+                background-color: $hover;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+    }
+
+    .footer-contact-area {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-title {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 20px;
+            color: $white;
+            font-weight: 400;
+
+            span {
+                color: $secondary;
+            }
+
+            &:focus,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .footer-nav {
+        position: relative;
+        z-index: 1;
+
+        li {
+            @include flex(0 0 50%);
+            max-width: 50%;
+            width: 50%;
+
+            a {
+                display: block;
+                margin-bottom: 15px;
+                color: $secondary;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+
+                i {
+                    color: $white;
+                }
+
+                &:focus,
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .nl-form {
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+
+        input {
+            width: 100%;
+            height: 46px;
+            background-color: $white;
+            border-radius: 23px;
+            border: none;
+            padding: 0 20px;
+            color: $secondary;
+            font-size: 16px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        button {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            top: 3px;
+            right: 3px;
+            color: $white;
+            background-color: $primary;
+            cursor: pointer;
+            @include transition-duration(500ms);
+            outline: none;
+
+            &:focus,
+            &:hover {
+                background-color: $heading;
+            }
+        }
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: $hover;
+    }
+
+    .footer-contact {
+        p {
+            margin-bottom: 10px;
+            color: $white;
+
+            span {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.copywrite-text {
+    position: relative;
+    z-index: 1;
+
+    @media #{$breakpoint-xs} {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    @media #{$breakpoint-sm} {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    p {
+        font-size: 16px;
+        color: $secondary;
+        margin-bottom: 0;
+
+        @media #{$breakpoint-md} {
+            font-size: 14px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+
+        a {
+            color: $primary;
+            font-size: 16px;
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+
+            &:focus,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.copywrite-content {
+    position: relative;
+    z-index: 1;
+    padding: 15px 0;
+    background-color: $dark3;
+
+    .footer-menu {
+        .nav {
+
+            @include justify-content-end;
+
+            @media #{$breakpoint-xs} {
+                @include justify-content-center;
+            }
+
+            @media #{$breakpoint-sm} {
+                @include justify-content-start;
+            }
+
+            li {
+                margin-right: 30px;
+
+                @media #{$breakpoint-md} {
+                    margin-right: 15px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    margin-right: 10px;
+                }
+
+                a {
+                    display: inline-block;
+                    color: $secondary;
+                    font-size: 16px;
+                    @include transition-duration(500ms);
+
+                    @media #{$breakpoint-md} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 12px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/* :: 23.0 Partner Area CSS */
+
+.partner-area {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $primary;
+
+    .partner-logo-slide {
+        a {
+            display: block;
+
+            img {
+                margin: 0 auto;
+                width: auto !important;
+                max-height: 70px;
+
+                @media #{$breakpoint-lg} {
+                    max-height: 60px;
+                }
+
+                @media #{$breakpoint-md} {
+                    max-height: 60px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+}

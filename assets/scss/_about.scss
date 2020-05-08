@@ -1,0 +1,70 @@
+/* :: 23.0 About Area CSS */
+
+.about-us-area {
+    position: relative;
+    z-index: 1;
+
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .col-12 {
+            padding-right: 20px;
+            padding-left: 20px;
+
+            @media #{$breakpoint-xs} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .about-us-title {
+        h2 {
+            color: $text-2;
+            margin-bottom: 10px;
+
+            @media #{$breakpoint-xs} {
+                font-size: 24px;
+            }
+
+            span {
+                color: $primary;
+            }
+        }
+    }
+
+    .single-about-content {
+        margin-bottom: 40px;
+
+        .single-about-thumb {
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 20px;
+
+            img {
+                border-radius: 5px;
+                @include transition-duration(1500ms);
+            }
+        }
+
+        p {
+            color: $text-3;
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+            .single-about-thumb {
+                img {
+                    @include transform(scale(1.2));
+                }
+            }
+        }
+    }
+}

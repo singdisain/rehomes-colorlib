@@ -1,0 +1,78 @@
+/* :: 17.0 Contact Area CSS */
+
+.contact--info-area {
+    margin-bottom: 40px;
+
+    h4 {
+        font-size: 30px;
+
+        @media #{$breakpoint-md} {
+            font-size: 24px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        color: $secondary;
+        margin-bottom: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 13px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 13px;
+        }
+
+        span {
+            color: $text;
+
+            @media #{$breakpoint-md} {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.contact-maps {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 620px;
+    @include transition-duration(500ms);
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .bottom-arrow {
+        @include transition-duration(500ms);
+        cursor: pointer;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        border-top: 30px solid $hover;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        margin-left: -30px;
+
+        &:hover,
+        &:focus {
+            border-top-color: $dark;
+        }
+    }
+
+    &.minimize {
+        height: 200px;
+    }
+}

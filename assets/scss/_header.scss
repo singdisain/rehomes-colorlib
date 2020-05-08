@@ -1,0 +1,217 @@
+/* :: 07.0 Header Area CSS */
+
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    @include transition-duration(500ms);
+    background-color: $primary;
+}
+
+.top-header-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-color: $heading;
+
+    .top-header-content {
+        @include display-flex(flex);
+        @include align-items-center;
+
+        > a {
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            i {
+                padding-right: 5px;
+                color: $white;
+            }
+
+            @media #{$breakpoint-md} {
+                margin-right: 30px;
+            }
+
+            @media #{$breakpoint-xs} {
+                margin-right: 15px;
+            }
+
+            span {
+                @media #{$breakpoint-md} {
+                    display: none;
+                }
+
+                @media #{$breakpoint-xs} {
+                    display: none;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $secondary;
+            }
+        }
+
+        .top-social-area {
+            a {
+                display: inline-block;
+                margin-right: 30px;
+                color: $white;
+                line-height: 50px;
+                font-size: 14px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @media #{$breakpoint-xs} {
+                    margin-right: 15px;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+
+.classy-nav-container {
+    background-color: transparent;
+    padding: 0;
+
+    .classy-navbar {
+        @include transition-duration(500ms);
+        height: 90px;
+        padding: 0;
+
+        .nav-brand {
+            @media #{$breakpoint-xs} {
+                max-width: 90px;
+                margin-right: 15px;
+            }
+        }
+
+        .classynav ul li {
+            a {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: $heading;
+                font-weight: 500;
+                padding: 0 20px;
+
+                &:focus,
+                &:hover {
+                    color: $secondary;
+                    font-weight: 500;
+                }
+            }
+
+            &.cn-dropdown-item,
+            &.megamenu-item {
+                ul li {
+                    a {
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        height: 42px;
+                        line-height: 42px;
+                        padding: 0 30px;
+                        color: $heading;
+
+                        &:focus,
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.classynav ul li {
+    &.active {
+        a {
+            color: $primary;
+        }
+    }
+}
+
+.classynav ul li.has-down > a::after,
+.classynav ul li.has-down.active > a::after,
+.classynav ul li.megamenu-item > a::after {
+    color: $heading;
+}
+
+.breakpoint-off .classynav ul li .dropdown,
+.breakpoint-off .classynav ul li .megamenu {
+    width: 210px;
+    @include box-shadow($box-shadow);
+    border-radius: 6px;
+}
+
+.breakpoint-off .classynav ul li .megamenu {
+    width: 100%;
+}
+
+.classy-navbar-toggler .navbarToggler span {
+    background-color: $heading;
+}
+
+.main-header-area {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+
+    .contact-btn {
+        a {
+            border: 1px solid $primary;
+            height: 40px;
+            line-height: 36px;
+            min-width: 130px;
+            text-align: center;
+            color: $primary;
+            font-size: 16px;
+            border-radius: 2px;
+            letter-spacing: 0.5px;
+
+            &:hover,
+            &:focus {
+                background-color: $hover;
+                color: $white;
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        @include box-shadow(0px 5px 14.25px 0.75px rgba(6, 6, 28, 0.1));
+
+        .classy-navbar {
+            height: 70px;
+
+            .classy-menu {
+
+                @media #{$breakpoint-md} {
+                    height: 100vh !important;
+                }
+
+                @media #{$breakpoint-xs} {
+                    height: 100vh !important;
+                }
+            }
+        }
+    }
+}

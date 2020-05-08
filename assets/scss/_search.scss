@@ -1,0 +1,121 @@
+/* :: 09.0 Search Area CSS */
+
+.nice-select .list {
+    width: 100%;
+}
+
+.rehomes-search-form-area {
+    position: relative;
+    z-index: 100;
+    background-color: $heading;
+    padding: 30px 0 15px 0;
+
+    @media #{$breakpoint-md} {
+        padding: 30px 0;
+    }
+
+    @media #{$breakpoint-xs} {
+        padding: 30px 0;
+    }
+
+    .rehomes-search-form {
+        position: relative;
+        width: 100%;
+
+        .row .row {
+            margin-left: -7.5px;
+            margin-right: -7.5px;
+
+            .col-12 {
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+
+        .form-control {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 45px;
+            border: 1px solid $border;
+            font-size: 16px;
+            border-radius: 2px;
+            @include display-flex(flex);
+            @include align-items-center;
+            color: $heading;
+
+            @media #{$breakpoint-xs} {
+                margin-bottom: 30px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: $hover;
+            }
+        }
+
+        .rehomes-search-btn {
+            @include transition-duration(500ms);
+            height: 105px;
+            width: 100%;
+            background-color: $primary;
+            color: $white;
+            line-height: 105px;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            padding: 0;
+            border-radius: 2px;
+            font-size: 24px;
+
+            &:hover,
+            &:focus {
+                background-color: $dark;
+                color: $white;
+            }
+        }
+    }
+}
+
+.slider-range {
+
+    .ui-widget-content {
+        border: none;
+        background: $dark2;
+
+        .ui-state-default {
+            background: $primary;
+            height: 14px;
+            width: 14px;
+            border: none;
+            border-radius: 50%;
+            top: 50%;
+            @include transform(translateY(-50%));
+        }
+    }
+
+    .ui-widget-header {
+        background: $primary;
+    }
+
+    .ui-slider-horizontal {
+        height: 4px;
+
+        .ui-slider-range {
+            border-radius: 0 !important;
+        }
+
+        .ui-slider-handle {
+            margin-left: 0;
+        }
+    }
+
+    .range-size {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .range-price {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

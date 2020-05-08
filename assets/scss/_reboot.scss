@@ -1,0 +1,242 @@
+/* :: 01.0 Reboot Area CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-lato;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    z-index: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-lato;
+    color: $heading;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+a {
+    color: $heading;
+    text-decoration: none;
+    @include transition-duration(500ms);
+    outline: none;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+        color: $heading;
+        text-decoration: none;
+        @include transition-duration(500ms);
+        outline: none;
+        font-weight: 500;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.5;
+    color: $text;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.20);
+    }
+}
+
+.bg-overlay-2 {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(25, 24, 29, 0.80);
+    }
+}
+
+.bg-overlay-3 {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(25, 24, 29, 0.30);
+    }
+}
+
+.bg-overlay-4 {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(25, 24, 29, 0.70);
+    }
+}
+
+.bg-gradient-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @include bg-gradient-overlay;
+        border-radius: 5px;
+    }
+}
+
+.bg-img {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+
+    > .jarallax-img {
+        position: absolute;
+        object-fit: cover;
+        font-family: 'object-fit: cover';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    color: $white;
+    right: 20px;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    width: 30px;
+    background: $hover;
+    height: 30px;
+    line-height: 30px;
+}
+
+button.mfp-close,
+button.mfp-arrow {
+    background: $hover;
+}
+
+.mfp-bottom-bar {
+    display: none !important;
+}
+
+.mfp-bg {
+    background-color: $dark;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-gray {
+    background-color: $bg-gray !important;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+textarea:invalid,
+input:invalid {
+    box-shadow: none !important;
+}
+
+.border {
+    border-color: $border;
+}
+
+.border-2 {
+    border: 1px solid $border-2;
+}
+
+.mfp-arrow-left::after {
+    border-right-color: transparent;
+}
+
+.mfp-arrow-left::before {
+    border-right-color: $white;
+}
+
+.mfp-arrow-right::after {
+    border-left-color: transparent;
+}
+
+.mfp-arrow-right::before {
+    border-left-color: $white;
+}
