@@ -50,25 +50,25 @@ Author: Colorlib
 ![Rehomes - Colorlib Screenshot](/screenshot_home.jpeg)
 
 ### About - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_about.png)
+![Rehomes - Colorlib Screenshot](/screenshot_about.jpg)
 
 ### Contact - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_contact.png)
+![Rehomes - Colorlib Screenshot](/screenshot_contact.jpg)
 
 ### Agent List - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_agents.png)
+![Rehomes - Colorlib Screenshot](/screenshot_agents.jpg)
 
 ### News - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_news.png)
+![Rehomes - Colorlib Screenshot](/screenshot_news.jpg)
 
 ### News Detail - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_news-detail.png)
+![Rehomes - Colorlib Screenshot](/screenshot_news-detail.jpg)
 
 ### Property Sale - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_sale.png)
+![Rehomes - Colorlib Screenshot](/screenshot_sales.jpg)
 
 ### Property Rent - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_rent.png)
+![Rehomes - Colorlib Screenshot](/screenshot_rent.jpg)
 
 ### Property Details - Screenshot
-![Rehomes - Colorlib Screenshot](/screenshot_property-details.png)
+![Rehomes - Colorlib Screenshot](/screenshot_property-details.jpg)
