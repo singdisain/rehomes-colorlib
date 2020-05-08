@@ -47,5 +47,28 @@ Author: Colorlib
 * Images from Unsplash
 
 ### Home - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_home.jpeg)
 
-![Rehomes - Colorlib Screenshot](/screenshot.jpeg)
+### About - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_about.png)
+
+### Contact - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_contact.png)
+
+### Agent List - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_agents.png)
+
+### News - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_news.png)
+
+### News Detail - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_news-detail.png)
+
+### Property Sale - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_sale.png)
+
+### Property Rent - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_rent.png)
+
+### Property Details - Screenshot
+![Rehomes - Colorlib Screenshot](/screenshot_property-details.png)
