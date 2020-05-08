@@ -10,27 +10,27 @@ is_hidden = 0
         <div id="property-thumb-silde" class="carousel slide wow fadeInUp" data-wow-delay="200ms" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#property-thumb-silde" data-slide-to="0" class="active"
-                    style="background-image: url(img/bg-img/64.jpg);"></li>
+                    style="background-image: url({{ 'assets/img/bg-img/64.jpg'|theme }});"></li>
                 <li data-target="#property-thumb-silde" data-slide-to="1"
-                    style="background-image: url(img/bg-img/65.jpg);"></li>
+                    style="background-image: url({{ 'assets/img/bg-img/65.jpg'|theme }});"></li>
                 <li data-target="#property-thumb-silde" data-slide-to="2"
-                    style="background-image: url(img/bg-img/66.jpg);"></li>
+                    style="background-image: url({{ 'assets/img/bg-img/66.jpg'|theme }});"></li>
                 <li data-target="#property-thumb-silde" data-slide-to="3"
-                    style="background-image: url(img/bg-img/67.jpg);"></li>
+                    style="background-image: url({{ 'assets/img/bg-img/67.jpg'|theme }});"></li>
             </ol>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/bg-img/64.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ 'assets/img/bg-img/64.jpg'|theme }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/bg-img/65.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ 'assets/img/bg-img/65.jpg'|theme }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/bg-img/66.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ 'assets/img/bg-img/66.jpg'|theme }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/bg-img/67.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ 'assets/img/bg-img/67.jpg'|theme }}" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@ is_hidden = 0
 
                     <!-- Floor Thumb -->
                     <div class="floor-thumb">
-                        <img src="img/bg-img/68.jpg" alt="">
+                        <img src="{{ 'assets/img/bg-img/68.jpg'|theme }}" alt="">
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@ is_hidden = 0
                         <div class="location-thumb-info d-flex align-items-center">
                             <!-- Location Thumb -->
                             <div class="location-thumb">
-                                <img src="img/bg-img/69.jpg" alt="">
+                                <img src="{{ 'assets/img/bg-img/69.jpg'|theme }}" alt="">
                             </div>
                             <!-- Location Info -->
                             <div class="location-info">
@@ -140,7 +140,7 @@ is_hidden = 0
                         <div class="location-thumb-info  d-flex align-items-center">
                             <!-- Location Thumb -->
                             <div class="location-thumb">
-                                <img src="img/bg-img/70.jpg" alt="">
+                                <img src="{{ 'assets/img/bg-img/70.jpg'|theme }}" alt="">
                             </div>
                             <!-- Location Info -->
                             <div class="location-info">
@@ -165,7 +165,7 @@ is_hidden = 0
                         <div class="location-thumb-info  d-flex align-items-center">
                             <!-- Location Thumb -->
                             <div class="location-thumb">
-                                <img src="img/bg-img/71.jpg" alt="">
+                                <img src="{{ 'assets/img/bg-img/71.jpg'|theme }}" alt="">
                             </div>
                             <!-- Location Info -->
                             <div class="location-info">
@@ -196,7 +196,7 @@ is_hidden = 0
                     <div class="agent-information-info d-flex align-items-center">
                         <!-- Agent Thumb -->
                         <div class="agent-thumb">
-                            <img src="img/bg-img/72.jpg" alt="">
+                            <img src="{{ 'assets/img/bg-img/72.jpg'|theme }}" alt="">
                         </div>
                         <!-- Agent Info -->
                         <div class="agent-info">
@@ -361,11 +361,12 @@ is_hidden = 0
                         <div class="single-recent-post d-flex align-items-center">
                             <!-- Thumb -->
                             <div class="properties-post-thumb">
-                                <a href="properties-details.html"><img src="img/bg-img/45.jpg" alt=""></a>
+                                <a href="{{ 'property-details'|page }}"><img
+                                        src="{{ 'assets/img/bg-img/45.jpg'|theme }}" alt=""></a>
                             </div>
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="properties-details.html" class="post-title">Kennedy Suite</a>
+                                <a href="{{ 'property-details'|page }}" class="post-title">Kennedy Suite</a>
                                 <p class="properties--location"><i class="fa fa-map-marker" aria-hidden="true"></i> GA
                                     125, Newyork</p>
                                 <p class="properties--rent">Rent: <span>$7.770.000</span></p>
@@ -376,11 +377,12 @@ is_hidden = 0
                         <div class="single-recent-post d-flex align-items-center">
                             <!-- Thumb -->
                             <div class="properties-post-thumb">
-                                <a href="properties-details.html"><img src="img/bg-img/46.jpg" alt=""></a>
+                                <a href="{{ 'property-details'|page }}"><img
+                                        src="{{ 'assets/img/bg-img/46.jpg'|theme }}" alt=""></a>
                             </div>
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="properties-details.html" class="post-title">Roob Viaduct</a>
+                                <a href="{{ 'property-details'|page }}" class="post-title">Roob Viaduct</a>
                                 <p class="properties--location"><i class="fa fa-map-marker" aria-hidden="true"></i> GA
                                     125, Newyork</p>
                                 <p class="properties--rent">Rent: <span>$7.770.000</span></p>
@@ -391,11 +393,12 @@ is_hidden = 0
                         <div class="single-recent-post d-flex align-items-center">
                             <!-- Thumb -->
                             <div class="properties-post-thumb">
-                                <a href="properties-details.html"><img src="img/bg-img/47.jpg" alt=""></a>
+                                <a href="{{ 'property-details'|page }}"><img
+                                        src="{{ 'assets/img/bg-img/47.jpg'|theme }}" alt=""></a>
                             </div>
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="properties-details.html" class="post-title">Glover Plains</a>
+                                <a href="{{ 'property-details'|page }}" class="post-title">Glover Plains</a>
                                 <p class="properties--location"><i class="fa fa-map-marker" aria-hidden="true"></i> GA
                                     125, Newyork</p>
                                 <p class="properties--rent">Rent: <span>$7.770.000</span></p>
@@ -416,20 +419,20 @@ is_hidden = 0
             <div class="col-12">
                 <div class="partner-logo-slide owl-carousel">
                     <!-- Single Partner Logo -->
-                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="100ms"><img src="img/core-img/1.png"
-                            alt=""></a>
+                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="100ms"><img
+                            src="{{ 'assets/img/core-img/1.png'|theme }}" alt=""></a>
                     <!-- Single Partner Logo -->
-                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="300ms"><img src="img/core-img/2.png"
-                            alt=""></a>
+                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="300ms"><img
+                            src="{{ 'assets/img/core-img/2.png'|theme }}" alt=""></a>
                     <!-- Single Partner Logo -->
-                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="500ms"><img src="img/core-img/3.png"
-                            alt=""></a>
+                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="500ms"><img
+                            src="{{ 'assets/img/core-img/3.png'|theme }}" alt=""></a>
                     <!-- Single Partner Logo -->
-                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="700ms"><img src="img/core-img/4.png"
-                            alt=""></a>
+                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="700ms"><img
+                            src="{{ 'assets/img/core-img/4.png'|theme }}" alt=""></a>
                     <!-- Single Partner Logo -->
-                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="900ms"><img src="img/core-img/5.png"
-                            alt=""></a>
+                    <a href="#" class="partner-logo wow fadeInUp" data-wow-delay="900ms"><img
+                            src="{{ 'assets/img/core-img/5.png'|theme }}" alt=""></a>
                 </div>
             </div>
         </div>
